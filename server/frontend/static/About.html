@@ -3,75 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us - Hibla</title>
-    <link rel="stylesheet" href="../static/style.css">
+
+    <!-- REQUIRED CSS FILES -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>About Us</h1>
-        <p>Welcome to Hibla - Your Trusted Online Shopping Platform</p>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Hibla</a>
+            <div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section class="about-company">
-        <h2>Our Mission</h2>
-        <p>
-            Hibla is dedicated to providing high-quality products at affordable prices.
-            Our mission is to create a seamless and secure online shopping experience
-            for customers worldwide.
+    <!-- About Section -->
+    <div class="container mt-5 text-center">
+        <h1 class="mb-3">About Us</h1>
+        <p class="lead">
+            Hibla is a modern online dealership platform dedicated to connecting customers
+            with trusted car dealers across the United States. Our goal is to provide
+            a seamless, secure, and user-friendly car buying experience.
         </p>
-    </section>
+    </div>
 
-    <section class="team">
-        <h2>Meet Our Team</h2>
+    <!-- Team Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Meet Our Team</h2>
 
-        <div class="team-member">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Vin Nguyen">
-            <h3>Vin Nguyen</h3>
-            <p><strong>Role:</strong> Full Stack Developer</p>
-            <p>
-                Vin is responsible for developing both the frontend and backend of the Hibla platform.
-                He specializes in Python, Flask, and modern web technologies.
-            </p>
-            <p><strong>Email:</strong> vin.nguyen@hibla.com</p>
+        <div class="row">
+
+            <!-- Member 1 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top" alt="Vin Nguyen">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vin Nguyen</h5>
+                        <p class="text-muted">Full Stack Developer</p>
+                        <p class="card-text">
+                            Responsible for backend APIs, Django integration,
+                            and frontend UI development.
+                        </p>
+                        <p>Email: vin.nguyen@hibla.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" class="card-img-top" alt="Anna Tran">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Anna Tran</h5>
+                        <p class="text-muted">UI/UX Designer</p>
+                        <p class="card-text">
+                            Designs responsive layouts and ensures excellent
+                            user experience across devices.
+                        </p>
+                        <p>Email: anna.tran@hibla.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" class="card-img-top" alt="David Le">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">David Le</h5>
+                        <p class="text-muted">Backend Engineer</p>
+                        <p class="card-text">
+                            Manages database architecture, APIs,
+                            and system performance optimization.
+                        </p>
+                        <p>Email: david.le@hibla.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" class="card-img-top" alt="Sophia Pham">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sophia Pham</h5>
+                        <p class="text-muted">Marketing Manager</p>
+                        <p class="card-text">
+                            Leads branding, marketing strategy,
+                            and customer engagement initiatives.
+                        </p>
+                        <p>Email: sophia.pham@hibla.com</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-        <div class="team-member">
-            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Anna Tran">
-            <h3>Anna Tran</h3>
-            <p><strong>Role:</strong> UI/UX Designer</p>
-            <p>
-                Anna designs intuitive and visually appealing user interfaces.
-                She ensures the best user experience across all devices.
-            </p>
-            <p><strong>Email:</strong> anna.tran@hibla.com</p>
-        </div>
-
-        <div class="team-member">
-            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="David Le">
-            <h3>David Le</h3>
-            <p><strong>Role:</strong> Backend Engineer</p>
-            <p>
-                David manages server-side logic, database architecture, and system security
-                to ensure high performance and data protection.
-            </p>
-            <p><strong>Email:</strong> david.le@hibla.com</p>
-        </div>
-
-        <div class="team-member">
-            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Pham">
-            <h3>Sophia Pham</h3>
-            <p><strong>Role:</strong> Marketing & Content Manager</p>
-            <p>
-                Sophia handles digital marketing strategies and creates engaging content
-                to connect with customers globally.
-            </p>
-            <p><strong>Email:</strong> sophia.pham@hibla.com</p>
-        </div>
-
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Hibla. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2026 Hibla. All Rights Reserved.</p>
     </footer>
 
 </body>
